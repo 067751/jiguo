@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*头部*/
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px #cecfcf inset;
+}
+
+.header_img1 {
+    margin: 13px 257px;
+
+}
+
+.list1>li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: -50px;
+    right: -423px;
+    font-size: 20px;
+    margin-left: 55px;
+}
+
+.list1>li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.list2>li {
+    list-style: none;
+    float: right;
+    position: relative;
+    top: -70px;
+    right: 239px;
+    margin: 16px;
+}
+
+.ul_li {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.ul_li:hover {
+    color: white;
+    background-color: #FF0000;
+    cursor: pointer;
+}
+
+.list2 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*注册*/
+.content {
+    width: 66%;
+    margin: 0 auto;
+
+
+}
+
+.regMain {
+    padding-bottom: 35px;
+    padding-top: 25px;
+}
+
+.regBox {
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px #d7d7d7 solid;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.regBox .title {
+    position: relative;
+    padding: 22px 0 20px 25px;
+    font-size: 20px;
+}
+
+.regBox .title:after {
+    background: #fe5341;
+}
+
+.regBox .title:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 25px;
+    left: 0;
+    top: 24px;
+}
+
+.regForm {
+    width: 400px;
+    margin: 50px auto 150px;
+}
+
+.regForm p {
+    margin-top: 27px;
+}
+
+.regForm input {
+    height: 50px;
+    padding-left: 10px;
+    width: 400px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px #eee solid;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+}
+
+.regForm input:required:valid {
+    border: 1px #eee solid;
+}
+
+
+
+
+
+
+#tableText:hover {
+    cursor: pointer;
+}
+
+.regForm button {
+    border: medium none;
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #FE5341;
+    color: white;
+}
+
+.message {
+    position: relative;
+    top: -37px;
+    right: -410px;
+
+}
+
+#yanzheng {
+    width: 245px;
+}
+
+.message {
+    display: none;
+}
+
+.message i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 27px;
+    background: url(../img/sprite.jpg) no-repeat;
+}
+
+.message .active {
+    background-position: 0 0
+}
+
+.message .err {
+    background-position: 0 -58px
+}
+
+.message .ok {
+    background-position: 0 -31px
+}
+
+body {
+    background: url(../img/厦门.jpg) no-repeat;
+    background-size: contain;
+}

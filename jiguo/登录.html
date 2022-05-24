@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/底部.css">
+    <link rel="stylesheet" href="./css/登录.css">
+    <link rel="stylesheet" href="./css/登录动画.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <img class=" header_img1" src="./img/logonew.png" alt="" width="130px">
+        <ul class="list1">
+            <li>首页</li>
+            <li>酷玩</li>
+            <li>导航</li>
+            <li>试用</li>
+            <li>报告</li>
+        </ul>
+        <ul class="list2">
+            <li class="ul_li">注册</li>
+            <li><img class="header_img2" src="./img/search.png" alt=""></li>
+
+        </ul>
+    </header>
+    <!-- 登录 -->
+    <div class="content">
+        <section class="report-box regMain">
+            <div class="wrap regBox">
+                <p class="title">登录极果</p>
+                <form class="regForm" name="my_f1" action="" method="post" onsubmit="returncheck(this);">
+
+                    <!-- 用户名 -->
+                    <p><input type="text" placeholder="请输入用户名" required="required" id="user" /></p>
+                    <span class="message"><i class="active"></i></span>
+
+                    <!-- 密码 -->
+                    <p><input style="width: 400px;" type="password" placeholder="请输入密码" required="required" name="psw1"
+                            id="psd" /></p>
+                    <span class="message"><i class="active"></i></span>
+
+                    <p><button id="submit">立即登录</button></p>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <!-- 底部 -->
+    <div class="foot">
+        <div class="cenect">
+            <dl><img src="./img/code.png" alt="" width="160" height="160"></dl>
+            <dl>
+                <dt><img src="./img/logoImg.jpg" alt=""></dt>
+                <dd>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</dd>
+                <dd>微信添加“JguoJguo” <br>获取我们的服务。</dd>
+            </dl>
+            <dl>
+                <dt>免费试用</dt>
+                <dd><a href="help.html#lc">试用流程</a></dd>
+                <dd><a href="help.html#cg">如何提高成功率</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">智东西</a><a href="#">WEIBUSI</a></dd>
+                <dd><a href="#">搜狐IT</a><a href="#">腾讯科技</a></dd>
+                <dd><a href="#">搜狐数码</a><a href="#">凤凰科技</a></dd>
+                <dd><a href="#">凤凰数码</a><a href="#">PConline</a></dd>
+                <dd><a href="#">泡泡网</a><a href="#">3W咖啡</a></dd>
+                <dd><a href="#">ZUK社区</a><a href="#">亿觅emie</a></dd>
+                <dd><a href="#">极客公园</a><a href="#">易迅易启玩</a></dd>
+                <dd><a href="#">果库</a></dd>
+            </dl>
+            <dl>
+                <dt>购买攻略</dt>
+                <dd><a href="#">美亚海淘教程</a></dd>
+                <dd><a href="#">日亚海淘教程</a></dd>
+                <dd><a href="#">海淘转运攻略</a></dd>
+                <dd><a href="#">kickstarter 众筹购买攻略</a></dd>
+                <dd><a href="#">indiegogo 众筹购买攻略</a></dd>
+            </dl>
+            <dl>
+                <dt>厂商合作</dt>
+                <dd><a href="about.html">关于极果</a></dd>
+                <dd><a href="about.html#connect">联系我们</a></dd>
+                <dd><a href="mailto:BD@jiguo.com">商务合作：BD@jiguo.com</a></dd>
+                <dd><a href="mailto:CEO@jiguo.com">CEO邮箱：CEO@jiguo.com</a></dd>
+            </dl>
+        </div>
+        <p class="copy">© 2016 极果版权所有</p>
+    </div>
+</body>
+
 </html>
+
+<script>
+    var user = document.getElementById('user');
+    var psd = document.getElementById('psd');
+    var s_ = document.getElementsByTagName('span');
+    user_s = s_[0];
+    psd_s = s_[1];
+
+    //验证用户名
+    user.onfocus = function () {
+        user_s.style.display = "block";
+        user_s.innerHTML = '<i class="ati"></i>请输入中文用户名';
+    }
+    user.onblur = function () {
+        yhm = /[\u4e00-\u9fa5]/gm;
+        if (user.value == '') {
+            user_s.innerHTML = '<i class="err"></i>不能为空';
+            return false;
+        }
+        else if (!yhm.test(user.value)) {
+            user_s.innerHTML = '<i class="err"></i>用户名格式不对';
+            return false;
+        } else {
+            user_s.innerHTML = '<i class="ok"></i>输入正确';
+            return true;
+        }
+    }
+
+    //设置密码
+    psd.onfocus = function () {
+        psd_s.style.display = 'block';
+        psd_s.innerHTML = '<i class="ati"></i>密码长度在6-12个字符';
+    }
+    psd.onblur = function () {
+        var mm1 = /^\w{6,12}$/;
+        var mm2 = /[^0-9]/;
+        var mm3 = /[^a-zA-Z]/;
+        if (psd.value == '') {
+            psd_s.innerHTML = '<i class="err"></i>不能为空';
+            return false;
+        } else if (!mm1.test(psd.value)) {
+            psd_s.innerHTML = '<i class="err"></i>长度不在范围内';
+            return false;
+        } else if (!mm2.test(psd.value)) {
+            psd_s.innerHTML = '<i class="err"></i>密码不能全是数字'
+            return false;
+        } else if (!mm3.test(mm3)) {
+            psd_s.innerHTML = '<i class="err"></i>密码不能全是字母'
+            return false;
+        } else {
+            psd_s.innerHTML = '<i class="ok"></i>正确'
+            return true
+        }
+    }
+
+</script>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/注册.css">
+    <link rel="stylesheet" href="./css/底部.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <img class=" header_img1" src="./img/logonew.png" alt="" width="130px">
+        <ul class="list1">
+            <li>首页</li>
+            <li>酷玩</li>
+            <li>导航</li>
+            <li>试用</li>
+            <li>报告</li>
+        </ul>
+        <ul class="list2">
+            <li class="ul_li">注册</li>
+            <li><img class="header_img2" src="./img/search.png" alt=""></li>
+
+        </ul>
+    </header>
+    <!-- 注册 -->
+    <div class="content">
+        <section class="report-box regMain">
+            <div class="wrap regBox">
+                <p class="title">注册极果</p>
+                <form class="regForm" name="my_f1" action="" method="post" onsubmit="returncheck(this);">
+                    <!-- 手机号 -->
+                    <p><input type="text" placeholder="请输入登录手机号" required="required" id="phone" name="tel" /></p>
+                    <span class="message"><i class="active"></i></span>
+
+                    <!-- 校验码 -->
+                    <p>
+                        <input type="text" placeholder="请输入图片效验码" id="xiaoyan" required="required" name="imgCode" />
+                        <img src="img/imgCode.jpg" width="132" height="35" />
+                    </p>
+                    <span class="message"><i class="active"></i></span>
+
+                    <!-- 验证码 -->
+                    <p>
+                        <input type="text" id="yanzheng" placeholder="请输入4位数字验证码" id="yanzheng" required="required"
+                            name="code" />
+                        <a id="tableText">获取验证码</a>
+                        <span class="message"><i class="active"></i></span>
+                    </p>
+
+
+                    <!-- 用户名 -->
+                    <p><input type="text" placeholder="请输入用户名" required="required" id="user" /></p>
+                    <span class="message"><i class="active"></i></span>
+
+                    <!-- 密码 -->
+                    <p><input type="password" placeholder="请设置密码" required="required" name="psw1" id="psd" /></p>
+                    <span class="message"><i class="active"></i></span>
+
+                    <!-- 确认密码 -->
+                    <p><input type="password" placeholder="确认密码" required="required" name="psw2" id="psd2" /></p>
+                    <span class="message"><i class="active"></i></span>
+
+                    <p><button id="submit">立即注册</button></p>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <!-- 底部 -->
+    <div class="foot">
+        <div class="cenect">
+            <dl><img src="./img/code.png" alt="" width="160" height="160"></dl>
+            <dl>
+                <dt><img src="./img/logoImg.jpg" alt=""></dt>
+                <dd>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</dd>
+                <dd>微信添加“JguoJguo” <br>获取我们的服务。</dd>
+            </dl>
+            <dl>
+                <dt>免费试用</dt>
+                <dd><a href="help.html#lc">试用流程</a></dd>
+                <dd><a href="help.html#cg">如何提高成功率</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">智东西</a><a href="#">WEIBUSI</a></dd>
+                <dd><a href="#">搜狐IT</a><a href="#">腾讯科技</a></dd>
+                <dd><a href="#">搜狐数码</a><a href="#">凤凰科技</a></dd>
+                <dd><a href="#">凤凰数码</a><a href="#">PConline</a></dd>
+                <dd><a href="#">泡泡网</a><a href="#">3W咖啡</a></dd>
+                <dd><a href="#">ZUK社区</a><a href="#">亿觅emie</a></dd>
+                <dd><a href="#">极客公园</a><a href="#">易迅易启玩</a></dd>
+                <dd><a href="#">果库</a></dd>
+            </dl>
+            <dl>
+                <dt>购买攻略</dt>
+                <dd><a href="#">美亚海淘教程</a></dd>
+                <dd><a href="#">日亚海淘教程</a></dd>
+                <dd><a href="#">海淘转运攻略</a></dd>
+                <dd><a href="#">kickstarter 众筹购买攻略</a></dd>
+                <dd><a href="#">indiegogo 众筹购买攻略</a></dd>
+            </dl>
+            <dl>
+                <dt>厂商合作</dt>
+                <dd><a href="about.html">关于极果</a></dd>
+                <dd><a href="about.html#connect">联系我们</a></dd>
+                <dd><a href="mailto:BD@jiguo.com">商务合作：BD@jiguo.com</a></dd>
+                <dd><a href="mailto:CEO@jiguo.com">CEO邮箱：CEO@jiguo.com</a></dd>
+            </dl>
+        </div>
+        <p class="copy">© 2016 极果版权所有</p>
+    </div>
+</body>
+
+</html>
+<script src="./js/注册.js"></script>
