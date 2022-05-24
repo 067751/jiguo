@@ -1,0 +1,232 @@
+/* 头部 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    // border: 1px solid #F7F7F7;
+    box-shadow: #F7F7F7 0px 6px 5px 2px;
+
+    .type {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .logo {
+            float: left;
+            height: 100px;
+
+            img {
+                width: 150px;
+                margin-top: 20px;
+            }
+        }
+
+        nav {
+            height: 100px;
+            float: left;
+            line-height: 100px;
+
+            ul {
+                list-style: none;
+                overflow: hidden;
+
+                li {
+                    float: left;
+                    margin: 0 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                    }
+
+                    &>a:hover {
+                        color: red;
+                    }
+                }
+
+                li:nth-of-type(1) {
+                    margin-left: 50px;
+                }
+            }
+        }
+
+        .right {
+            float: right;
+            text-decoration: none;
+            color: red;
+            font-size: 15px;
+            font-weight: 300;
+            padding: 5px 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            margin-top: 35px;
+
+            &:hover {
+                color: #fff;
+                background-color: red;
+            }
+        }
+
+        .search {
+            background-color: aquamarine;
+            width: 24px;
+            height: 26px;
+            float: right;
+            background: url(../css/img/search.png);
+            margin-top: 40px;
+            margin-right: 25px;
+        }
+    }
+}
+
+//发现酷玩
+.center {
+    width: 100%;
+    height: 50px;
+
+    h2 {
+        text-align: center;
+        line-height: 172px;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    p {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            width: 150px;
+            height: 40px;
+            margin: 0 20px;
+            line-height: 40px;
+            font-size: 20px;
+            color: #A3A9B5;
+
+            &:nth-of-type(3) {
+                color: #FE5431;
+                border-bottom: 3px solid #FE5431;
+            }
+        }
+    }
+}
+
+/* 中间部分*/
+.box {
+    width: 100%;
+    height: 900px;
+    margin-top: 165px;
+    background-color: #F7F7F7;
+
+    .boxbx {
+        width: 66%;
+        background-color: #FFFFFF;
+        margin: 0 auto;
+
+        ul {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: gray;
+            }
+
+            li {
+                width: 1000px;
+
+                dd {
+                    width: 100%;
+                    overflow: hidden;
+                    border-bottom: 1px dashed gray;
+
+                    .list {
+                        padding: 10px 27px;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 
+.click {
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    // background-color: #fff;
+
+    p {
+        background: url(img/more.png) no-repeat 328px 17px;
+        color: #fe5341;
+        line-height: 40px;
+        text-align: center;
+        font-size: 17px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .km {
+        background: url(img/loading-icon.gif) no-repeat 335px 10px;
+        color: #fe5341;
+        line-height: 40px;
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+
+
+// 底部
+.foot {
+    width: 100%;
+    height: 450px;
+    background-color: #505050;
+
+    .cenect {
+        width: 80%;
+        // height: 450px;
+        margin: 0 auto;
+        padding-top: 29px;
+        overflow: hidden;
+
+        dl {
+            float: left;
+            padding: 0 15px;
+
+            dt {
+                color: #fff;
+            }
+
+            dd {
+                font-size: 14px;
+                color: gray;
+                padding-top: 15px;
+
+                &>a {
+                    font-size: 14px;
+                    color: gray;
+                    text-decoration: none;
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+
+    .copy {
+        padding-top: 50px;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: gray;
+    }
+}

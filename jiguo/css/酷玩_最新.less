@@ -1,0 +1,280 @@
+// 酷玩最热
+/* 头部 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    // border: 1px solid #F7F7F7;
+    box-shadow: #F7F7F7 0px 6px 5px 2px;
+
+    .type {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .logo {
+            float: left;
+            height: 100px;
+
+            img {
+                width: 150px;
+                margin-top: 20px;
+            }
+        }
+
+        nav {
+            height: 100px;
+            float: left;
+            line-height: 100px;
+
+            ul {
+                list-style: none;
+                overflow: hidden;
+
+                li {
+                    float: left;
+                    margin: 0 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                    }
+
+                    &>a:hover {
+                        color: red;
+                    }
+                }
+
+                li:nth-of-type(1) {
+                    margin-left: 50px;
+                }
+            }
+        }
+
+        .right {
+            float: right;
+            text-decoration: none;
+            color: red;
+            font-size: 15px;
+            font-weight: 300;
+            padding: 5px 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            margin-top: 35px;
+
+            &:hover {
+                color: #fff;
+                background-color: red;
+            }
+        }
+
+        .search {
+            background-color: aquamarine;
+            width: 24px;
+            height: 26px;
+            float: right;
+            background: url(../css/img/search.png);
+            margin-top: 40px;
+            margin-right: 25px;
+        }
+    }
+}
+
+//发现酷玩
+.center {
+    width: 100%;
+    height: 50px;
+
+    h2 {
+        text-align: center;
+        line-height: 172px;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    p {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            width: 150px;
+            height: 40px;
+            margin: 0 20px;
+            line-height: 40px;
+            font-size: 20px;
+            color: #A3A9B5;
+
+            &:nth-of-type(2) {
+                color: #FE5431;
+                border-bottom: 3px solid #FE5431;
+            }
+        }
+    }
+}
+
+// 图片
+.imger {
+    margin-top: 166px;
+    width: 100%;
+    // height: 600px;
+    background-color: #F7F7F7;
+
+    .imgerbx {
+        width: 80%;
+        // height: 100%;
+        // background-color: #fff;
+        margin: 0 auto;
+        padding-top: 20px;
+
+        #mydiv {
+            width: 1000px;
+            // height: 100%;
+            list-style: none;
+            padding: 0 20px;
+            margin: 0 auto;
+            overflow: hidden;
+
+            li {
+                width: 220px;
+                height: 234px;
+                border: 1px solid #e6e9e9;
+                border-radius: 6px;
+                float: left;
+                margin-bottom: 19px;
+                margin-left: 28px;
+
+                &>a {
+                    text-decoration: none;
+                }
+
+                img {
+                    border-radius: 6px 6px 0 0;
+                }
+
+                .info {
+                    width: 80%;
+                    padding-left: 10px;
+
+                    p {
+                        height: 63px;
+                        padding-top: 5px;
+                        font-size: 14px;
+                        color: black;
+                    }
+                }
+
+                .footer {
+                    width: 100%;
+                }
+
+                .left {
+                    float: left;
+                    font-size: 14px;
+                    color: #fe5341;
+                    padding-left: 10px;
+                }
+
+                .right {
+                    float: right;
+                    padding-right: 28px;
+
+                    span {
+                        font-size: 12px;
+                        color: gray;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-left: 14px;
+                        margin-left: 3px;
+                    }
+
+                    .xin {
+                        background: url(img/xin.png) no-repeat left center;
+                    }
+
+                    .look {
+                        background: url(img/reply.png) no-repeat left center;
+                    }
+                }
+            }
+        }
+
+        .click {
+            width: 80%;
+            height: 40px;
+            margin: 0 auto;
+            // background-color: #fff;
+
+            p {
+                background: url(img/more.png) no-repeat 415px 17px;
+                color: #fe5341;
+                line-height: 40px;
+                text-align: center;
+                font-size: 17px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .km {
+                background: url(img/loading-icon.gif) no-repeat 420px 11px;
+                color: #fe5341;
+                line-height: 40px;
+                text-align: center;
+                font-size: 17px;
+            }
+        }
+
+    }
+}
+
+// 底部
+.foot {
+    width: 100%;
+    height: 450px;
+    background-color: #505050;
+
+    .cenect {
+        width: 80%;
+        // height: 450px;
+        margin: 0 auto;
+        padding-top: 29px;
+        overflow: hidden;
+
+        dl {
+            float: left;
+            padding: 0 15px;
+
+            dt {
+                color: #fff;
+            }
+
+            dd {
+                font-size: 14px;
+                color: gray;
+                padding-top: 15px;
+
+                &>a {
+                    font-size: 14px;
+                    color: gray;
+                    text-decoration: none;
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+
+    .copy {
+        padding-top: 50px;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: gray;
+    }
+}

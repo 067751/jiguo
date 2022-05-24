@@ -1,0 +1,268 @@
+/* 头部 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  box-shadow: #F7F7F7 0px 6px 5px 2px;
+}
+
+header .type {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header .type .logo {
+  float: left;
+  height: 100px;
+}
+
+header .type .logo img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+header .type nav {
+  height: 100px;
+  float: left;
+  line-height: 100px;
+}
+
+header .type nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+header .type nav ul li {
+  float: left;
+  margin: 0 20px;
+}
+
+header .type nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+header .type nav ul li>a:hover {
+  color: red;
+}
+
+header .type nav ul li:nth-of-type(1) {
+  margin-left: 50px;
+}
+
+header .type .right {
+  float: right;
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 5px 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-top: 35px;
+}
+
+header .type .right:hover {
+  color: #fff;
+  background-color: red;
+}
+
+header .type .search {
+  background-color: aquamarine;
+  width: 24px;
+  height: 26px;
+  float: right;
+  background: url(../css/img/search.png);
+  margin-top: 40px;
+  margin-right: 25px;
+}
+
+.center {
+  width: 100%;
+  height: 50px;
+}
+
+.center h2 {
+  text-align: center;
+  line-height: 172px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.center p {
+  text-align: center;
+}
+
+.center p a {
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  margin: 0 20px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #A3A9B5;
+}
+
+.center p a:nth-of-type(1) {
+  color: #FE5431;
+  border-bottom: 3px solid #FE5431;
+}
+
+.imger {
+  margin-top: 166px;
+  width: 100%;
+  background-color: #F7F7F7;
+}
+
+.imger .imgerbx {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.imger .imgerbx #mydiv {
+  width: 1000px;
+  list-style: none;
+  padding: 0 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.imger .imgerbx #mydiv li {
+  width: 220px;
+  height: 234px;
+  border: 1px solid #e6e9e9;
+  border-radius: 6px;
+  float: left;
+  margin-bottom: 19px;
+  margin-left: 28px;
+}
+
+.imger .imgerbx #mydiv li>a {
+  text-decoration: none;
+}
+
+.imger .imgerbx #mydiv li img {
+  border-radius: 6px 6px 0 0;
+}
+
+.imger .imgerbx #mydiv li .info {
+  width: 80%;
+  padding-left: 10px;
+}
+
+.imger .imgerbx #mydiv li .info p {
+  height: 63px;
+  padding-top: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+.imger .imgerbx #mydiv li .footer {
+  width: 100%;
+}
+
+.imger .imgerbx #mydiv li .left {
+  float: left;
+  font-size: 14px;
+  color: #fe5341;
+  padding-left: 10px;
+}
+
+.imger .imgerbx #mydiv li .right {
+  float: right;
+  padding-right: 28px;
+}
+
+.imger .imgerbx #mydiv li .right span {
+  font-size: 12px;
+  color: gray;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 14px;
+  margin-left: 3px;
+}
+
+.imger .imgerbx #mydiv li .right .xin {
+  background: url(img/xin.png) no-repeat left center;
+}
+
+.imger .imgerbx #mydiv li .right .look {
+  background: url(img/reply.png) no-repeat left center;
+}
+
+.imger .imgerbx .click {
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.imger .imgerbx .click p {
+  background: url(img/more.png) no-repeat 415px 17px;
+  color: #fe5341;
+  line-height: 40px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.imger .imgerbx .click p:hover {
+  cursor: pointer;
+}
+
+.imger .imgerbx .click .km {
+  background: url(img/loading-icon.gif) no-repeat 420px 11px;
+  color: #fe5341;
+  line-height: 40px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.foot {
+  width: 100%;
+  height: 450px;
+  background-color: #505050;
+}
+
+.foot .cenect {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 29px;
+  overflow: hidden;
+}
+
+.foot .cenect dl {
+  float: left;
+  padding: 0 15px;
+}
+
+.foot .cenect dl dt {
+  color: #fff;
+}
+
+.foot .cenect dl dd {
+  font-size: 14px;
+  color: gray;
+  padding-top: 15px;
+}
+
+.foot .cenect dl dd>a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  padding-right: 25px;
+}
+
+.foot .copy {
+  padding-top: 50px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: gray;
+}
