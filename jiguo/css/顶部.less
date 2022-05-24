@@ -1,0 +1,75 @@
+/* 头部 */
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 100px;
+    .type{
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+        .logo{
+            float: left;
+            height: 100px;
+            img{
+                width: 150px;
+                margin-top: 20px;
+            }
+        }
+        nav{
+            height: 100px;
+            float: left;
+            line-height: 100px;
+            ul{
+                list-style: none;
+                overflow: hidden;
+                li{
+                    float: left;
+                    margin: 0 20px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                    }
+                    &>a:hover{
+                        color: red;
+                    }
+                }
+                li:nth-of-type(1){
+                    margin-left: 50px;
+                }
+                &>li:nth-of-type(1){
+                    a{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .right{
+            float: right;
+            text-decoration: none;
+            color: red;
+            font-size: 15px;
+            font-weight: 300;
+            padding: 5px 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            margin-top: 35px;
+            &:hover{
+                color: #fff;
+                background-color: red;
+            }
+        }
+        .search{
+            background-color: aquamarine;
+            width: 24px;
+            height: 26px;
+            float: right;
+            background: url(../css/img/search.png);
+            margin-top: 40px;
+            margin-right: 25px;
+        }
+    }
+}
+/* 焦点图 */

@@ -1,0 +1,205 @@
+/* 头部 */
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 100px;
+}
+header .type {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .type .logo {
+  float: left;
+  height: 100px;
+}
+header .type .logo img {
+  width: 150px;
+  margin-top: 20px;
+}
+header .type nav {
+  height: 100px;
+  float: left;
+  line-height: 100px;
+}
+header .type nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+header .type nav ul li {
+  float: left;
+  margin: 0 20px;
+}
+header .type nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+header .type nav ul li > a:hover {
+  color: red;
+}
+header .type nav ul li:nth-of-type(1) {
+  margin-left: 50px;
+}
+header .type nav ul > li:nth-of-type(3) a {
+  color: red;
+}
+header .type .right {
+  float: right;
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 5px 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-top: 35px;
+}
+header .type .right:hover {
+  color: #fff;
+  background-color: red;
+}
+header .type .search {
+  background-color: aquamarine;
+  width: 24px;
+  height: 26px;
+  float: right;
+  background: url(../css/img/search.png);
+  margin-top: 40px;
+  margin-right: 25px;
+}
+/*导航栏*/
+.label {
+  text-align: center;
+  height: 150px;
+}
+.label h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100px;
+}
+.label .dan {
+  padding-top: 44px;
+}
+.label .dan a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0px 50px;
+  color: #afafaf;
+}
+.label .dan a:nth-of-type(1) {
+  color: red;
+  border-bottom: 5px solid red;
+}
+/*导购精选*/
+.cent {
+  height: 900px;
+  background-color: #F7F7F7;
+}
+.cent .cen1 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.cent .cen1 .new {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.cent .cen1 .new .list {
+  width: 20%;
+  height: 230px;
+  background-color: #fff;
+  border: 1px solid #e7e3e3;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+.cent .cen1 .new .list img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.cent .cen1 .new .list .img {
+  width: 213px;
+  position: absolute;
+  top: 252px;
+}
+.cent .cen1 .new .list p {
+  height: 30px;
+  font-size: 14px;
+  padding: 5px;
+}
+.cent .cen1 .new .list .fix {
+  margin-top: 20px;
+  padding: 5px;
+}
+.cent .cen1 .new .list .fix .right {
+  float: right;
+  color: #A3A3A3;
+  font-size: 13px;
+}
+.cent .cen1 .new .list .fix .right span {
+  padding-left: 20px;
+}
+.cent .cen1 .new .list .fix .right .xin {
+  background: url(../css/img/xin.png) no-repeat 6px;
+}
+.cent .cen1 .new .list .fix .right .reply {
+  background: url(../css/img/reply.png) no-repeat 6px;
+}
+.cent .click {
+  margin-top: 40px;
+  text-align: center;
+  color: red;
+  cursor: pointer;
+  padding-left: 20px;
+  background: url(../css/img/more.png) no-repeat 700px 9px;
+}
+.cent .dian {
+  margin-top: 40px;
+  text-align: center;
+  color: red;
+  cursor: pointer;
+  padding-left: 20px;
+  background: url(../css/img/loading-icon.gif) no-repeat 700px 1px;
+}
+/* 底部*/
+.foot {
+  width: 100%;
+  height: 450px;
+  background-color: #505050;
+}
+.foot .cenect {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.foot .cenect dl {
+  float: left;
+}
+.foot .cenect dl dt {
+  color: #fff;
+}
+.foot .cenect dl dd {
+  font-size: 14px;
+  color: gray;
+  padding-top: 15px;
+}
+.foot .cenect dl dd > a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  padding-right: 25px;
+}
+.foot .copy {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: gray;
+  margin-top: 42px;
+}

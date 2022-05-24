@@ -1,0 +1,223 @@
+/* 头部 */
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 100px;
+}
+header .type {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .type .logo {
+  float: left;
+  height: 100px;
+}
+header .type .logo img {
+  width: 150px;
+  margin-top: 20px;
+}
+header .type nav {
+  height: 100px;
+  float: left;
+  line-height: 100px;
+}
+header .type nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+header .type nav ul li {
+  float: left;
+  margin: 0 20px;
+}
+header .type nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+header .type nav ul li > a:hover {
+  color: red;
+}
+header .type nav ul li:nth-of-type(1) {
+  margin-left: 50px;
+}
+header .type nav ul > li:nth-of-type(4) a {
+  color: red;
+}
+header .type .right {
+  float: right;
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 5px 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-top: 35px;
+}
+header .type .right:hover {
+  color: #fff;
+  background-color: red;
+}
+header .type .search {
+  width: 24px;
+  height: 26px;
+  float: right;
+  background: url(../css/img/search.png);
+  margin-top: 40px;
+  margin-right: 25px;
+}
+/*导航栏*/
+.label {
+  text-align: center;
+  height: 150px;
+}
+.label h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100px;
+}
+.label .dan {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.label .dan a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0px 40px;
+  color: #afafaf;
+}
+.label .dan a:nth-of-type(2) {
+  color: red;
+  border-bottom: 5px solid red;
+}
+.label .dan1 {
+  height: 50px;
+}
+.label .dan1 a {
+  text-decoration: none;
+  padding: 0px 60px;
+  line-height: 50px;
+  color: #afafaf;
+  font-size: 16px;
+}
+.label .dan1 a:nth-of-type(1) {
+  color: black;
+}
+/*试用*/
+.cen {
+  height: 1100px;
+  background-color: #f7f7f7;
+}
+.cen .sec {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.cen .sec .new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.cen .sec .new .list {
+  width: 23%;
+  border: 1px solid #e7e3e3;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+.cen .sec .new .list img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.cen .sec .new .list h2 {
+  font-size: 16px;
+  padding: 5px;
+  font-weight: 600;
+}
+.cen .sec .new .list .tabs {
+  color: red;
+  margin-top: 5px;
+}
+.cen .sec .new .list .tabs span {
+  padding: 3px 6px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.cen .sec .new .list .sq {
+  margin-top: 15px;
+}
+.cen .sec .new .list .sq span {
+  color: #fe5341;
+}
+.cen .sec .new .list .tiem {
+  margin-top: 10px;
+  color: red;
+}
+.cen .sec .new .list .info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: red;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 0px 5px 0px 5px;
+}
+.cen .click {
+  margin-top: 40px;
+  text-align: center;
+  color: red;
+  cursor: pointer;
+  padding-left: 20px;
+  background: url(../css/img/more.png) no-repeat 700px 9px;
+}
+.cen .dian {
+  margin-top: 40px;
+  text-align: center;
+  color: red;
+  cursor: pointer;
+  padding-left: 20px;
+  background: url(../css/img/loading-icon.gif) no-repeat 700px 1px;
+}
+/* 底部*/
+.foot {
+  width: 100%;
+  height: 450px;
+  background-color: #505050;
+}
+.foot .cenect {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.foot .cenect dl {
+  float: left;
+}
+.foot .cenect dl dt {
+  color: #fff;
+}
+.foot .cenect dl dd {
+  font-size: 14px;
+  color: gray;
+  padding-top: 15px;
+}
+.foot .cenect dl dd > a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  padding-right: 25px;
+}
+.foot .copy {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: gray;
+  margin-top: 42px;
+}
